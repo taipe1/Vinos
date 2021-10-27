@@ -331,12 +331,14 @@ iframe{
     padding: 0;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    
     outline: none;
   }
-  .contactanos{
-    display: block;
-  }
+
+ 
   .ubicacion{
+    /* width: 100%; */
     background-color: #242526;
   }
 }
@@ -345,11 +347,14 @@ iframe{
 /* Tablets --------------- */
 @media  screen and (max-width : 1024px) 
 {
+  textarea{
+    height: 5rem;
+  }
   .footer{
     width: 100%;
   }
   .contactanos,.ubicacion{
-    width: 50%;
+    /* width: 50%; */
   }
   .formulario > input, textarea{
     width: 23rem;
