@@ -1,0 +1,151 @@
+
+*,*::after,*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Roboto Condensed", sans-serif;;
+  background-color: rgb(134, 116, 116)
+}
+img{
+  width: 100%;
+  min-width: 200px;
+  height: auto;
+}
+h1{
+  color: #FFBF10;
+}
+P{
+  color: white;
+}
+li{
+  list-style-type: none;
+}
+a{
+  padding: 2px 8px;
+  color: white;
+  text-decoration: none;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 35% 50% 25% 70% 70% 6%;
+  grid-template-areas:
+            "header"
+            "productos"
+            "horario"
+            "contacto"
+            "ubicacion"
+            "footer";
+}
+.header{
+  grid-area: header;
+  background-image: url(https://www.vintragos.com/wp-content/uploads/2020/04/20507827_1534652996599903_6510837944710375518_o.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.nav li{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color:#000000;
+  height: 30px;
+}
+
+
+
+
+/* productos */
+.productos{
+  grid-area: productos;
+}
+.prod{
+  width:30px;
+}
+
+
+
+/* horario */
+.horario{
+  grid-area: horario;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000 !important;
+  font-size: 10px;
+}
+.botones{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+[type="button"]{
+  border: none;
+  color: rgb(0, 0, 0);
+  background-color: #FFBF10;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+
+/* contacto */
+.contacto{
+  grid-area: contacto;
+  background-color: #110F0E;
+}
+.contacto__container,
+.ubicacion__container{
+  padding: 40px;
+}
+.contacto__ingreso h1,
+.contacto__ingreso p{
+  padding-bottom:14px;
+}
+.datos input{
+  min-width: 100%;
+  margin-bottom: 5px;
+}
+
+
+/* ubicacion */
+.ubicacion{
+  grid-area: ubicacion;
+  background-color: #242526;
+}
+
+
+
+
+
+
+
+
+/* footer */
+.footer{
+  grid-area: footer;
+  background-color: #110F0E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
