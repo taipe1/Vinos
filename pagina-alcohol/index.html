@@ -3,36 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Pagina de Venta de Alcohol</title>
+  <title>Licores Trujillo</title>
 </head>
 <body>
   <div class="container">
+
     <div class="header">
       <div class="nav">
         <li>
           <a href="#">INICIO</a>
-          <a href="#">PRODUCTOS</a>
+          <a href="#producto">PRODUCTOS</a>
           <a href="#">DELIVERY</a>
-          <a href="#">CONTACTO</a>
+          <a href="#contactos">CONTACTO</a>
         </li>
       </div>
     </div>
-    <div class="productos">
+
+    <div id="producto" class="productos">
       <div class="producto">
-        <h2>PRODUCTO</h2>
-        <div class="producto__menu">
-          <div class="prod"><img src="https://www.vintragos.com/wp-content/imagenes/licores.jpg" alt="">Licores</div>
-          <div class="prod"><img src="https://www.vintragos.com/wp-content/imagenes/licores.jpg" alt="">Licores</div>
-          <div class="prod"><img src="https://www.vintragos.com/wp-content/imagenes/licores.jpg" alt="">Licores</div>
-          <div class="prod"><img src="https://www.vintragos.com/wp-content/imagenes/licores.jpg" alt="">Licores</div>
+        <h1>PRODUCTO</h1>
+        <div class="productos__item">
+          <a href="enlaces/licores.html#producto"> <div class="licores"> 
+            <div class="imagen">
+              <img src="https://www.vintragos.com/wp-content/imagenes/licores.jpg" alt="licor" width="30px">
+            </div>
+            <div class="nombre">
+              <p>Licores</p>
+            </div>
+          </div></a> 
+          <a href="enlaces/cervezas.html#producto"> <div class="licores"> 
+            <div class="imagen">
+              <img src="https://www.vintragos.com/wp-content/imagenes/cervezas.jpg" alt="cerveza">
+            </div>
+            <div class="nombre">
+              <p>Cervezas</p>
+            </div>
+          </div></a> 
+          <a href="enlaces/cigarros.html#producto"> <div class="licores"> 
+            <div class="imagen">
+              <img src="https://www.vintragos.com/wp-content/imagenes/cigarros.jpg" alt="cigarro">
+            </div>
+            <div class="nombre">
+              <p>Cigarros</p>
+            </div>
+          </div></a> 
+          <a href="enlaces/complementos.html#producto"> <div class="licores"> 
+            <div class="imagen">
+              <img src="https://www.vintragos.com/wp-content/imagenes/complementos.jpg" alt="paneton">
+            </div>
+            <div class="nombre">
+              <p>Paneton</p>
+            </div>
+          </div></a> 
+          <a href="enlaces/complementos.html#producto"> <div class="licores"> 
+            <div class="imagen">
+              <img src="https://www.vintragos.com/wp-content/imagenes/complementos.jpg" alt="paneton">
+            </div>
+            <div class="nombre">
+              <p>Paneton</p>
+            </div>
+          </div></a> 
         </div>
       </div>
-      <div class="tabla">
-
-      </div>
     </div>
+
     <div class="horario">
       <div class="horario__contenido">
         <h1>HORARIOS DE ATENCIÓN</h1>
@@ -42,55 +79,68 @@
         </div>
       </div>
     </div>
-    <div class="contacto">
+
+    <div id="contactos" class="contacto__universal">
       <div class="contacto__container">
+
         <div class="contacto__ingreso">
           <h1>CONTÁCTANOS</h1>
           <p>Somos una licorería ubicada en Trujillo Perú. Ofrecemos servicio de delivery de tragos y licores en Trujillo.
           </p>
-          <div class="datos">
-            <input type="text" placeholder="Nombres y Apellidos">
-            <input type="email" placeholder="Email">
-            <input type="text" placeholder="Celular">
-            <input type="" placeholder="Mensaje">
+          <!-- <div class="formulario">
+            <input type="text"  placeholder="Nombres y Apellidos">
+            <input type="text" class="media" placeholder="Email">
+            <input type="text" class="media"  placeholder="Celular">
+            <textarea name="mensaje" id="" cols="78.5"  placeholder="Mensaje"></textarea>
+            <button type="submit" class="enviar">Enviar &gt</button>
+          </div> -->
+
+        <div class="contacto">
+          <div class="redes">
+            <H1>CONTACTO</H1>
+            <p> <a href="#"> <img class="imagen" src="img/whatsapp.png" alt=""><strong> 957 022 387</strong></a></p>
+            <p> <a href="#"> <img class="imagen" src="img/llamada-telefonica.png" alt=""><strong>957022387</strong></a></p>
+            <p> <a href="#"> <img class="imagen" src="img/correo.png" alt=""><strong>bord_lmv153ls@h</strong></a></p>
+            <p> <a href="#"> <img class="imagen" src="img/facebook.png" alt=""><strong>/jeremy.137</strong></a></p>
+            <p> <a href="#"> <img class="imagen" src="img/instagram.png" alt=""><strong>Jeremy Chirinos</strong></a></p>
           </div>
-          <input type="button" value="Enviar">
-        </div>
-        <div class="contacto__impreso">
-          <h1>CONTACTO</h1>
-          <div class="datos__personales">
-            <p><img src="" alt="icono"> 994 334 234</p>
-            <p><img src="" alt="icono"> 994 334 234</p>
-            <p><img src="" alt="icono"> 994 334 234</p>
-            <p><img src="" alt="icono"> 994 334 234</p>
-            <p><img src="" alt="icono"> 994 334 234</p>
-          </div>
-          <div class="logo">
-            <img src="" alt="logo">
+          <div class="img">
+            <img src="img/logo.png" alt="">
           </div>
         </div>
       </div>
     </div>
+
     <div class="ubicacion">
       <div class="ubicacion__container">
         <h1>UBÍCANOS</h1>
       <div class="ubicanos">
         <p>Sucursal 1: Mz E Lt. 30 Urb. Ingeniería (Frente TEATRO UPAO)
         </p>
-        
+        <div class="map-responsive">
+          <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15799.138301156148!2d-79.03957998596714!3d-8.123402856368937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ad3d74e70b5105%3A0xdfa624fc3b7c3d6f!2s%C3%93valo%20Papal!5e0!3m2!1ses-419!2spe!4v1640579650106!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
+          </iframe>
+        </div>
       </div>
       <div class="ubicanos">
         <p>Sucursal 1: Mz E Lt. 30 Urb. Ingeniería (Frente TEATRO UPAO)
         </p>
-        
+        <div class="map-responsive">
+          <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15799.138301156148!2d-79.03957998596714!3d-8.123402856368937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ad3d74e70b5105%3A0xdfa624fc3b7c3d6f!2s%C3%93valo%20Papal!5e0!3m2!1ses-419!2spe!4v1640579650106!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
+          </iframe>
+        </div>
       </div>
       <div class="ubicanos">
         <p>Sucursal 1: Mz E Lt. 30 Urb. Ingeniería (Frente TEATRO UPAO)
         </p>
-        
+        <div class="map-responsive">
+          <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15799.138301156148!2d-79.03957998596714!3d-8.123402856368937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ad3d74e70b5105%3A0xdfa624fc3b7c3d6f!2s%C3%93valo%20Papal!5e0!3m2!1ses-419!2spe!4v1640579650106!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
+          </iframe>
+        </div>
       </div>
       </div>
     </div>
+
     <div class="footer">
       <p>Desarrollado por Andy</p>
     </div>

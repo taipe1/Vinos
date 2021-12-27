@@ -8,16 +8,19 @@ body{
   font-family: "Roboto Condensed", sans-serif;;
   background-color: rgb(134, 116, 116)
 }
-img{
+/* img{
   width: 100%;
   min-width: 200px;
   height: auto;
-}
+} */
 h1{
   color: #FFBF10;
+  font-size: clamp(15px,5vw,22px);
 }
-P{
-  color: white;
+p,
+strong {
+  color: rgb(255, 255, 255);
+  font-size: clamp(4px,4vw,22px);
 }
 li{
   list-style-type: none;
@@ -32,41 +35,85 @@ a{
   height: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 35% 50% 25% 70% 70% 6%;
+  grid-template-rows: .5fr 1fr .5fr;
   grid-template-areas:
             "header"
             "productos"
             "horario"
-            "contacto"
+            "contacto__universal"
             "ubicacion"
             "footer";
 }
+
+
+/* nav */
 .header{
   grid-area: header;
   background-image: url(https://www.vintragos.com/wp-content/uploads/2020/04/20507827_1534652996599903_6510837944710375518_o.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  max-height: 500px;
 }
 .nav li{
+  margin-top: 15px;
   text-align: center;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color:#000000;
-  height: 30px;
+  height: 40px;
 }
-
+li a{
+  transition: 1s color;
+}
+a:hover{
+  color: rgb(218, 214, 214);
+}
 
 
 
 /* productos */
 .productos{
+  position: relative;
   grid-area: productos;
+  background: url(https://www.vintragos.com/wp-content/imagenes/fondo-productos.jpg) center no-repeat;
 }
-.prod{
-  width:30px;
+.producto{
+  padding-top: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
+.productos__item{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.productos p{
+  font-size: 23px;
+}
+.imagen img{
+  min-width: 50px;
+  height: 70px;
+}
+.licores{
+  width: 130px;
+  height: 125px;
+  border: 5px solid #F5BD34;
+  border-radius: 18px ;
+  background-color: #121212;
+  margin: 8px;
+  padding-top: .9rem;
+  text-align: center;
+  transition: 1s opacity;
+}
+.licores:hover{
+  opacity: .9;
+}
+
 
 
 
@@ -77,7 +124,6 @@ a{
   justify-content: center;
   align-items: center;
   background-color: #000000 !important;
-  font-size: 10px;
 }
 .botones{
   display: flex;
@@ -99,10 +145,13 @@ a{
 
 
 
+
+
+
 /* contacto */
-.contacto{
-  grid-area: contacto;
-  background-color: #110F0E;
+.contacto__universal{
+  grid-area: contacto__universal;
+  background-color: #1f1c1b;
 }
 .contacto__container,
 .ubicacion__container{
@@ -112,10 +161,58 @@ a{
 .contacto__ingreso p{
   padding-bottom:14px;
 }
-.datos input{
-  min-width: 100%;
-  margin-bottom: 5px;
+.formulario > input ,textarea{
+  height: 50px;
+  width: 20rem;
+  border: 2.5px solid #ffbf10;
+  padding: 15px;
+  margin: 3px;
+  background-color: #110F0E;
+  color: #ffbf10;
 }
+::placeholder, textarea{
+  color: #ffbf10;
+}
+.enviar{
+  height: 30px;
+  width: 85px;
+  border-radius: 20px;
+  background-color: #F5BD34;
+  font-size: 15px;
+  font-weight: 9px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.contacto{
+  padding-top: 25px;
+  display: flex;
+  justify-content:space-around
+}
+.redes p{
+  /* font-size: 20px; */
+  display: flex;
+  justify-content: start;
+  margin: 3px;
+}
+.redes p a .imagen{
+  width: clamp(20px,3vw,28px) ;
+  height: clamp(20px,3vw,28px) ;
+}
+strong{
+  color: white;
+  padding: 0px 0px 18px 8px;
+  left: 20px;
+}
+strong:hover{
+  color: #0889B0;
+  cursor: default;
+}
+
+
+
 
 
 /* ubicacion */
@@ -123,8 +220,23 @@ a{
   grid-area: ubicacion;
   background-color: #242526;
 }
-
-
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+.map-responsive iframe{
+  margin-top: 20px;
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+.ubicanos{
+ padding: 12px 0px;
+}
 
 
 
